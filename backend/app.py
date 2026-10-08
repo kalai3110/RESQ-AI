@@ -25,8 +25,8 @@ def create_app():
     CORS(app, resources={r"/*": {"origins": "*"}})
 
     # Ensure uploads directory exists
-    os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
-
+    os.makedirs(app.config.get('UPLOAD_FOLDER', '/tmp/uploads'), exist_ok=True)
+    
     # Static file serving for uploaded disaster images
     @app.route('/uploads/<filename>', methods=['GET'])
     def uploaded_file(filename):
