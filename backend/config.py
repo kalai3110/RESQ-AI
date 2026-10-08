@@ -24,5 +24,6 @@ class Config:
     SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL', MYSQL_URL)
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     
-UPLOAD_FOLDER = '/tmp/uploads'    MAX_CONTENT_LENGTH = 16 * 1024 * 1024  # 16 MB max image size
+UPLOAD_FOLDER = '/tmp/uploads'
+MAX_CONTENT_LENGTH = 16 * 1024 * 1024  # 16 MB max image size
     ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg', 'webp', 'gif'}
