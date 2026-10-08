@@ -1,0 +1,76 @@
+|--- immediate_help_required <= 12.50
+|   |--- immediate_help_required <= 4.50
+|   |   |--- missing <= 1.50
+|   |   |   |--- damage_level_code <= 2.50
+|   |   |   |   |--- injured <= 0.50
+|   |   |   |   |   |--- immediate_help_required <= 2.50
+|   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- immediate_help_required >  2.50
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |--- injured >  0.50
+|   |   |   |   |   |--- injured <= 5.50
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- injured >  5.50
+|   |   |   |   |   |   |--- class: 2
+|   |   |   |--- damage_level_code >  2.50
+|   |   |   |   |--- damage_level_code <= 3.50
+|   |   |   |   |   |--- class: 2
+|   |   |   |   |--- damage_level_code >  3.50
+|   |   |   |   |   |--- class: 3
+|   |   |--- missing >  1.50
+|   |   |   |--- people_affected <= 12.50
+|   |   |   |   |--- class: 2
+|   |   |   |--- people_affected >  12.50
+|   |   |   |   |--- class: 2
+|   |--- immediate_help_required >  4.50
+|   |   |--- damage_level_code <= 3.50
+|   |   |   |--- injured <= 8.50
+|   |   |   |   |--- missing <= 3.50
+|   |   |   |   |   |--- injured <= 1.50
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- injured >  1.50
+|   |   |   |   |   |   |--- class: 2
+|   |   |   |   |--- missing >  3.50
+|   |   |   |   |   |--- damage_level_code <= 2.50
+|   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |--- damage_level_code >  2.50
+|   |   |   |   |   |   |--- class: 3
+|   |   |   |--- injured >  8.50
+|   |   |   |   |--- infrastructure_damage <= 0.50
+|   |   |   |   |   |--- injured <= 12.50
+|   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |--- injured >  12.50
+|   |   |   |   |   |   |--- class: 3
+|   |   |   |   |--- infrastructure_damage >  0.50
+|   |   |   |   |   |--- immediate_help_required <= 8.50
+|   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |--- immediate_help_required >  8.50
+|   |   |   |   |   |   |--- class: 3
+|   |   |--- damage_level_code >  3.50
+|   |   |   |--- class: 3
+|--- immediate_help_required >  12.50
+|   |--- injured <= 7.50
+|   |   |--- damage_level_code <= 2.50
+|   |   |   |--- missing <= 3.50
+|   |   |   |   |--- immediate_help_required <= 15.50
+|   |   |   |   |   |--- class: 2
+|   |   |   |   |--- immediate_help_required >  15.50
+|   |   |   |   |   |--- class: 2
+|   |   |   |--- missing >  3.50
+|   |   |   |   |--- class: 3
+|   |   |--- damage_level_code >  2.50
+|   |   |   |--- class: 3
+|   |--- injured >  7.50
+|   |   |--- injured <= 8.50
+|   |   |   |--- immediate_help_required <= 14.50
+|   |   |   |   |--- class: 3
+|   |   |   |--- immediate_help_required >  14.50
+|   |   |   |   |--- class: 3
+|   |   |--- injured >  8.50
+|   |   |   |--- injured <= 9.50
+|   |   |   |   |--- damage_level_code <= 1.50
+|   |   |   |   |   |--- class: 3
+|   |   |   |   |--- damage_level_code >  1.50
+|   |   |   |   |   |--- class: 3
+|   |   |   |--- injured >  9.50
+|   |   |   |   |--- class: 3

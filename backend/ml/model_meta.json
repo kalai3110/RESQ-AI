@@ -1,0 +1,72 @@
+{
+  "disaster_types": [
+    "Flood",
+    "Cyclone",
+    "Earthquake",
+    "Fire",
+    "Landslide",
+    "Accident",
+    "Other"
+  ],
+  "damage_levels": {
+    "Low": 1,
+    "Medium": 2,
+    "High": 3,
+    "Critical": 4
+  },
+  "severity_classes": [
+    "LOW",
+    "MEDIUM",
+    "HIGH",
+    "CRITICAL"
+  ],
+  "priority_mapping": {
+    "CRITICAL": {
+      "code": "P1",
+      "title": "Critical",
+      "response": "Immediate Response Required (< 30 mins)",
+      "color": "#E53935"
+    },
+    "HIGH": {
+      "code": "P2",
+      "title": "High",
+      "response": "Very Urgent Response (< 2 hours)",
+      "color": "#FB8C00"
+    },
+    "MEDIUM": {
+      "code": "P3",
+      "title": "Medium",
+      "response": "Normal Response (< 6 hours)",
+      "color": "#FFB300"
+    },
+    "LOW": {
+      "code": "P4",
+      "title": "Low",
+      "response": "Monitor & Routine Assistance",
+      "color": "#43A047"
+    }
+  },
+  "feature_columns": [
+    "disaster_type_code",
+    "people_affected",
+    "injured",
+    "missing",
+    "immediate_help_required",
+    "damage_level_code",
+    "infrastructure_damage",
+    "property_damage"
+  ],
+  "accuracy": 0.9583333333333334,
+  "tree_depth": 6,
+  "num_leaves": 39,
+  "feature_importances": {
+    "disaster_type_code": 0.012637590063480022,
+    "people_affected": 0.06421421047155917,
+    "injured": 0.14834396381579676,
+    "missing": 0.024259046124861672,
+    "immediate_help_required": 0.6157988787689519,
+    "damage_level_code": 0.12856426084917819,
+    "infrastructure_damage": 0.006165186871913915,
+    "property_damage": 1.6863034258445945e-05
+  }
+}
